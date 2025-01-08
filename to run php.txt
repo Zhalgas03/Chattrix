@@ -1,0 +1,13 @@
+To run server
+php -S localhost:8000
+php -S 192.168.189.145:8000
+
+To open	
+http://localhost:8000/index.php
+http://192.168.189.145:8000/index.php
+
+
+
+docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=2286 -e MYSQL_DATABASE=mydb -e MYSQL_USER=zhalgas -e MYSQL_PASSWORD=2286 -p 3310:3306 -d mysql:latest 
+
+docker exec -it mysql-container mysql -u root -p

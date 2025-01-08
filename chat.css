@@ -1,0 +1,280 @@
+.chat_body{
+    background-color: #1b1b1b;
+}
+
+
+
+
+.chat-box {
+    margin-top: 0;
+    margin-bottom:10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 675px;
+    overflow-y: scroll;
+    background-color: #1b1b1b;
+    border:2px solid #333333;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius:10px;
+}
+
+
+
+.message-date {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    margin: 10px 0;
+}
+
+
+.sent {
+    display: flex;
+    background-color: #00bcd4;
+    color:white;
+    align-self: flex-end;
+}
+
+.received {
+    display: flex;
+    background-color: #333333;
+    color:white;
+    align-self: flex-start;
+}
+
+
+textarea {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+button {
+    display: block;
+    margin-top: 10px;
+}
+
+.chat-container{
+    width:70%;
+    height:100%;
+    margin:auto;
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+.chat_main{
+    width:1380px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top:70px;
+    
+}
+
+.kotakbas{
+    background-color: #333333;
+    margin-right:10px;
+}
+
+/* Добавим стили для списка */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    width:100%;
+    border-radius:10px;
+}
+
+.rel{
+    height:70px;
+    transition: background-color 0.5s ease;
+}
+
+
+/* Для каждого элемента списка */
+/* Стили для ссылок */
+.relel {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black; /* Цвет текста по умолчанию */
+    border-radius: 5px; /* Скругление углов */
+    font-weight: 600;
+    font-size:20px;
+    color:white;
+    padding:10px;
+    display:flex;
+    align-items: center;
+}
+
+.relel:hover{
+    text-decoration: none;
+    color:white;
+}
+
+/* Стили для изображения */
+.relel img {
+    border-radius: 50%; /* Картинка будет круглая */
+    margin-right: 10px;
+}
+
+/* Эффект при наведении на ссылку */
+.rel:hover {
+    background-color: rgb(65, 65, 65); 
+    border-radius:10px;
+}
+
+.chatleft{
+    width:30%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.relcon{
+    display:flex;
+    flex-direction: column;
+}
+
+.last-message{
+    font-weight:400;
+    font-size:16px;
+    color:#d3d3d3;
+}
+
+.chatup{
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+    background-color: #333333;
+    color:white;
+    margin-bottom:10px;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatupim{
+    margin-right:10px;
+
+}
+
+.chatupim img{
+    border-radius: 100%;
+    width:50px;
+    height:50px;
+}
+
+#messageForm{
+    display:flex;
+}
+
+
+
+
+.sent, .received {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px;
+    padding: 7px 7px 0px 7px;
+    border-radius: 10px;
+    max-width: 500px;
+    min-width:120px;
+    position: relative;
+}
+
+.message-footer {
+    position: absolute;
+    bottom: 3px;
+    right: 12px;
+    font-size: 0.75em;
+    color: #666;
+}
+
+.read-status {
+    color: green;
+}
+
+#send_button{
+    height:50px;
+    width:50px;
+    border:none;
+    background-color: #333333;
+    color:#00bcd4;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#send_button:hover{
+    background-color: #00bcd4;
+    color:#333333;
+    cursor: pointer; 
+}
+
+.textarea{
+    border-radius: 10px;
+    margin-right:10px;
+    background-color: #333333;
+    color:#ddd;
+    font-size: 17px;
+    padding:10px;
+}
+
+@media (max-width: 480px) {
+    .chat_main{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        margin-bottom:70px;
+        padding:10px;
+    }
+    .chat-container{
+        width:100%;
+    }
+    .chatleft{
+        width:100%;
+        height:16vh;
+        overflow-y: scroll;
+    }
+
+    .chat-box{
+        height:45vh;
+    }
+    .cname{
+        font-size: 5vw;
+        margin:0;
+    }
+    .chatup{
+        width:100%;
+        align-items: center;
+        margin-top:20px;
+    }
+
+    
+    .chatupim img{
+    border-radius: 100%;
+    width:35px;
+    height:35px;
+    
+}
+
+    .kotakbas{
+        margin:0;
+    }
+
+    #send_button{
+        height:45px;
+        width:45px;
+    }
+
+    
+    .textarea{
+
+        font-size: 16px;
+        height: 45px;
+    }
+    
+}

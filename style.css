@@ -1,0 +1,143 @@
+body {
+    background-color: #1b1b1b;
+}
+
+
+
+.form {
+    width: 600px;
+    background-color: #333333; 
+    padding: 50px 120px 50px 120px;
+    border-radius: 8px;
+}
+
+.form.reg{
+    width: 800px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.forgot {
+    color: #00bcd4; 
+}
+
+.forgot:hover {
+    color: #0288d1; 
+    text-decoration: none;
+
+}
+
+.showbtn {
+    background: none;
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    background-color: #00bcd4; 
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0288d1;
+}
+
+label{
+    font-size:14.5px;
+}
+
+.form-check {
+    margin-top: 60px;
+}
+
+
+#password-requirements {
+    font-size: 12px;
+    color: #cccccc;
+}
+
+.dmain{
+    height:2000px;
+    width:900px;
+    background-color: #333333;
+
+}
+
+
+
+.dleft{
+    height:700px;
+    width:200px;
+    background-color: red;
+
+}
+.dright{
+    height:700px;
+    width:200px;
+    background-color: green;
+
+}
+
+.parent{
+    width:1500px;
+    display: flex;
+    background-color: #0288d1;
+    margin:auto;
+    justify-content: center;
+}
+
+.navbar-brand{
+    margin-left:200px;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"], input[type="date"]{
+    background-color: #333333;
+    color: #ffffff;
+    border:none;
+    border-radius:0;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    padding-left:5px;
+}
+
+input[type="email"]:focus , input[type="password"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="date"]:focus{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: #333333;
+    box-shadow: none;
+    color: #ffffff;
+    padding-left:5px;
+}
+
+#gender,#plus{
+    background-color: #333333;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+
+@media (max-width: 480px) {
+    body {
+        background-color: #333333;
+    }
+
+
+    .form{
+        padding:40px;
+        height:100%;
+    }
+
+
+}
+
+
